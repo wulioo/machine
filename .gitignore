@@ -2,7 +2,7 @@
 \logs\*.log
 
 static/images/*
-requirement.txt
+#requirement.txt
 apps/*/migrations
 #Machine/settings.py
 logs/*.log
