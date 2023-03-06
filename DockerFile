@@ -1,0 +1,27 @@
+# 建立 python3.7 环境
+FROM python:3.11
+
+# 镜像作者
+MAINTAINER ZDH
+
+# 设置 python 环境变量
+ENV PYTHONUNBUFFERED 1
+
+# 在容器内创建mysite文件夹
+RUN mkdir -p /var/www/html/machine
+
+COPY ./requirement.txt ./requirement.txt
+RUN pip install uwsgi && ln -s /usr/local/python3/bin/uwsgi /usr/bin/uwsgi
+
+RUN pip install -r requirement.txt -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+
+WORKDIR /var/www/html/machine
+
+
+RUN mkdir /var/run/celery/
+
+RUN wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/1.12/gosu-amd64" && chmod +x /usr/local/bin/gosu && gosu nobody true
+
+ADD . /var/www/html/machine
+
+ENTRYPOINT ["./start.sh"]

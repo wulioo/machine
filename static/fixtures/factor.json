@@ -1,0 +1,262 @@
+[
+  {
+    "model": "factor.systable",
+    "pk": 1,
+    "fields": {
+      "tb_name": "future_tech_daily_factor",
+      "tb_note": "�ڻ��������ӱ�",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 0
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 2,
+    "fields": {
+      "tb_name": "future_varieties_tech_daily",
+      "tb_note": "�ڻ�Ʒ�ּ������ӱ�",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 0
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 3,
+    "fields": {
+      "tb_name": "fv_1d_ai_1",
+      "tb_note": "�ڻ�����AI���ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 4,
+    "fields": {
+      "tb_name": "fv_1d_fundamental_1",
+      "tb_note": "�ڻ�Ʒ�ֻ��������ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 5,
+    "fields": {
+      "tb_name": "fv_1d_section_1",
+      "tb_note": "�ڻ�Ʒ���նȽ������ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 6,
+    "fields": {
+      "tb_name": "fv_d_tech_1",
+      "tb_note": "������е�Ƶ�ڻ���������",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 0
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 7,
+    "fields": {
+      "tb_name": "fv_d_vlmprc_1",
+      "tb_note": "�ڻ�Ʒ���������ӱ�",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-08-18",
+      "update_time": "2022-08-18",
+      "status": 0
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 8,
+    "fields": {
+      "tb_name": "fv_1d_ai_2",
+      "tb_note": "�ڻ�����AI���ӱ�2",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-09-07",
+      "update_time": "2022-09-07",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 9,
+    "fields": {
+      "tb_name": "fv_1d_ai_co_1",
+      "tb_note": "�ڻ�AI����Ż����ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-09-07",
+      "update_time": "2022-09-07",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 10,
+    "fields": {
+      "tb_name": "fv_1d_signal_1",
+      "tb_note": "�ڻ�Ʒ���ź����ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-09-07",
+      "update_time": "2022-09-07",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 11,
+    "fields": {
+      "tb_name": "fv_1d_tech_1",
+      "tb_note": "�ڻ�Ʒ�ּ������ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-09-15",
+      "update_time": "2022-09-15",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 12,
+    "fields": {
+      "tb_name": "fv_1d_tech_2",
+      "tb_note": "�ڻ�Ʒ�ּ������ӱ�2��������е�Ƶ�ڻ����ԣ�",
+      "database": "tq_facotr",
+      "tb_type": 1,
+      "create_time": "2022-09-15",
+      "update_time": "2022-09-15",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 13,
+    "fields": {
+      "tb_name": "fv_1d_volprice_1",
+      "tb_note": "�ڻ�Ʒ���������ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-09-15",
+      "update_time": "2022-09-15",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 14,
+    "fields": {
+      "tb_name": "eq_1d_ai_1",
+      "tb_note": "��ƱAI_daywindow���ӱ�",
+      "database": "tq_factor",
+      "tb_type": 2,
+      "create_time": "2022-10-08",
+      "update_time": "2022-10-08",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 15,
+    "fields": {
+      "tb_name": "eq_1d_ai_2",
+      "tb_note": "��ƱAI_15minutes���ӱ�",
+      "database": "tq_factor",
+      "tb_type": 2,
+      "create_time": "2022-10-08",
+      "update_time": "2022-10-08",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 16,
+    "fields": {
+      "tb_name": "eq_1d_ai_3",
+      "tb_note": "��ƱAI���ӱ�3",
+      "database": "tq_factor",
+      "tb_type": 2,
+      "create_time": "2022-10-08",
+      "update_time": "2022-10-08",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 17,
+    "fields": {
+      "tb_name": "eq_1d_volprice_1",
+      "tb_note": "��Ʊ�ն��������ӱ�1",
+      "database": "tq_factor",
+      "tb_type": 2,
+      "create_time": "2022-10-08",
+      "update_time": "2022-10-08",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 18,
+    "fields": {
+      "tb_name": "fv_1d_ai_3",
+      "tb_note": "�ڻ�AI���ӱ�3",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-10-08",
+      "update_time": "2022-10-08",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 19,
+    "fields": {
+      "tb_name": "fv_1d_volprice_2",
+      "tb_note": "�ڻ�Ʒ���������ӱ�2",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-10-20",
+      "update_time": "2022-10-20",
+      "status": 1
+    }
+  },
+  {
+    "model": "factor.systable",
+    "pk": 20,
+    "fields": {
+      "tb_name": "fv_1d_fundamental_2",
+      "tb_note": "�ڻ�Ʒ�ֻ��������ӱ�2",
+      "database": "tq_factor",
+      "tb_type": 1,
+      "create_time": "2022-10-27",
+      "update_time": "2022-10-27",
+      "status": 1
+    }
+  }
+]

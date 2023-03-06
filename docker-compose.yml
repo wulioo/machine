@@ -1,0 +1,64 @@
+version: '3'
+services:
+  web:
+    build: .
+    #image: machine_web:latest
+    ports:
+      - 8003:8003
+    #stdin_open: true
+    #tty: true
+    #command: /bin/bash
+#    user: "1001"
+    volumes:
+      - /home/zdh/machine:/var/www/html/machine
+    #command: sh -c "uwsgi --ini uwsgi.ini && celery -A Machine worker -l INFO -c 20 -f ./logs/celery.log"
+    networks:
+      mynet1:
+        ipv4_address: 172.24.0.4
+
+  redis:
+    image: redis
+    user: 1001:999
+    restart: always
+    hostname: redis
+    privileged: true
+    ports:
+      - 6479:6379
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - /home/zdh/redis/data:/data
+      - /home/zdh/redis/conf/redis.conf:/etc/redis/redis.conf
+      - /home/zdh/redis/logs:/logs
+    command: ["redis-server","/etc/redis/redis.conf"]
+    networks:
+      mynet1:
+        ipv4_address: 172.24.0.3
+
+  nginx:
+    image: nginx         # 镜像
+#    user: "1001"
+    #container_name: nginx # 容器名
+    restart: always      # 开机自动重启
+    ports:               # 端口号绑定（宿主机:容器内）
+      - 80:80
+      - 443:443  
+      - 8001:8001
+      - 8006:8006  
+    volumes:             # 目录映射（宿主机:容器内）
+      - /home/zdh/ssl/:/etc/nginx/ssl
+      - /home/zdh/nginx/nginx.conf/:/etc/nginx/nginx.conf:ro
+      - /home/zdh/nginx/conf.d/:/etc/nginx/conf.d
+      - /home/zdh/vue-machine/dist:/usr/share/nginx/html/dist
+      - /home/zdh/nginx/logs/:/var/log/nginx
+    networks:
+      mynet1:
+        ipv4_address: 172.24.0.2
+
+
+
+networks:
+   mynet1:
+      ipam:
+         config:
+         - subnet: 172.24.0.0/16
